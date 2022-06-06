@@ -97,18 +97,18 @@ module.exports.strategyHL =
 }
 /* Custom Strategy  (Custom) */
 module.exports.customStrategy = {
-    investmentAmount: '0.3', 	// Investment amount per token
+    investmentAmount: '0.2', 	// Investment amount per token
     maxBuyTax: 3,            	// max buy tax
     minBuyTax: 0,			// min buy tax
     maxSellTax: 3,			// max sell tax
     minSellTax: 0,           // min sell tax
     maxLiquidity: 1000,	   	// max Liquidity BNB
     minLiquidity: 250, 	  	// min Liquidity BNB
-    profitPercent: 50,          // 50% profit
-    stopLossPercent: 10,        // 10% loss
+    profitPercent: 17,          // 17% profit
+    stopLossPercent: 20,        // 20% loss
     platform: "COINMARKETCAP",      // Either COINMARKETCAP or COINGECKO
     gasPrice: ethers.utils.parseUnits('1', 'gwei'),
-    percentOfTokensToSellProfit: 75, // sell 75% of tokens when profit is reached
+    percentOfTokensToSellProfit: 100, // sell 100% of tokens when profit is reached
     percentOfTokensToSellLoss: 100, // sell 100% of tokens when stoploss is reached
     trailingStopLossPercent: 10 // % trailing stoploss
 }
